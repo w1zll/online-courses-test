@@ -1,1 +1,1 @@
-init
+Online версия - <https://online-courses-test-mipj.vercel.app/>

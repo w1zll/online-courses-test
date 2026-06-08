@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Courses</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <main class="courses">
+      <img
+        class="courses__decor courses__decor--dots"
+        src="./assets/decor-dots.svg"
+        alt=""
+        aria-hidden="true"
+      />
+      <img
+        class="courses__decor courses__decor--shapes"
+        src="./assets/decor-shapes.svg"
+        alt=""
+        aria-hidden="true"
+      />
+      <img
+        class="courses__decor courses__decor--arrows"
+        src="./assets/decor-arrows.svg"
+        alt=""
+        aria-hidden="true"
+      />
+
+      <section class="courses__inner" aria-labelledby="courses-title">
+        <header class="courses__header">
+          <p class="courses__eyebrow">Enjoy your studying!</p>
+          <h1 class="courses__title" id="courses-title">Our online courses</h1>
+        </header>
+
+        <div class="courses__toolbar">
+          <div
+            class="courses__tabs"
+            id="categoryTabs"
+            role="tablist"
+            aria-label="Course categories"
+          ></div>
+
+          <label class="courses__search">
+            <span class="visually-hidden">Search course</span>
+            <input
+              class="courses__search-input"
+              id="courseSearch"
+              type="search"
+              placeholder="Search course..."
+              autocomplete="off"
+            />
+            <img
+              class="courses__search-icon"
+              src="./assets/search.svg"
+              alt=""
+              aria-hidden="true"
+            />
+          </label>
+        </div>
+
+        <div class="courses__grid" id="coursesGrid" aria-live="polite"></div>
+        <p class="courses__empty" id="coursesEmpty" hidden>No courses found</p>
+
+        <button class="courses__load-more" id="loadMore" type="button">
+          <img
+            class="courses__load-icon"
+            src="./assets/convert.svg"
+            alt=""
+            aria-hidden="true"
+          />
+          <span>Load more</span>
+        </button>
+      </section>
+    </main>
+
+    <script src="./index.js" defer></script>
+  </body>
+</html>
